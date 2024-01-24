@@ -1,4 +1,5 @@
-# LumaPlaywright
+# LumaPlaywright 
+Automating Luma Commerce Webpage using Playwright Tool
 
 ## Framework and Tools
 • Playwright Automation Framework with Java Language
