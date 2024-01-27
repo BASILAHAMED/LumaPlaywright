@@ -8,7 +8,7 @@ Automating Luma Commerce Webpage using Playwright Tool
 
 • Used Eclipse IDE - Maven Builded Project
 
-• Added required dependencies including Apache POI, TestNG, Extent Reports etc.,
+• Added required dependencies including Playwright, Apache POI, TestNG, Extent Reports etc.,
 
 ## Cross-Browser Testing
 Implemented cross-browser testing to execute automation in multiple browsers like Edge, Chrome, Safari Webkit, Firefox etc.,
