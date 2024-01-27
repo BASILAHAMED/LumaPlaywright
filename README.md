@@ -6,7 +6,7 @@ Automating Luma Commerce Webpage using Playwright Tool
 
 • TestNG Framework with Extent Reports for generating reports
 
-• Used Eclipse IDE - Maven Builded Project
+• Used Eclipse IDE - Maven Project
 
 • Added required dependencies including Playwright, Apache POI, TestNG, Extent Reports etc.,
 
