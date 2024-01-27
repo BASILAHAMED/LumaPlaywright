@@ -1,5 +1,5 @@
 # LumaPlaywright 
-Automation Testing Luma Commerce Webpage using Playwright Tool
+Automation Testing Luma Commerce Webpage using Playwright - Java
 
 ## Framework and Tools
 • Playwright Automation Framework with Java Language
