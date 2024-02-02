@@ -6,7 +6,7 @@ public class HomePage {
 
 	private Page page;
 
-	// 1. String Locators - OR
+	// 1. String Locators 
 	private String search = "input[name='search']";
 	private String searchIcon = "div#search button";
 	private String searchPageHeader = "div#content h1";
