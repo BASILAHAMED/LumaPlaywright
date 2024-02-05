@@ -7,11 +7,11 @@ public class LoginPage {
 	private Page page;
 
 	// 1. String Locators - OR
-	private String emailId = "//input[@id='input-email']";
-	private String password = "//input[@id='input-password']";
-	private String loginBtn = "//input[@value='Login']";
-	private String forgotPwdLink = "//div[@class='form-group']//a[normalize-space()='Forgotten Password']";
-	private String logoutLink = "//a[@class='list-group-item'][normalize-space()='Logout']";
+	private String emailId = "//input[@id='email']";
+	private String password = "//input[@id='pass']";
+	private String loginBtn = "//button[@id='send2']";
+	private String forgotPwdLink = "//*[@id=\"login-form\"]/fieldset/div[4]/div[2]/a/span";
+	private String greetMsg = "//html/body/div[2]/header/div[1]/div/ul/li[1]/span[@class=\"logged-in\"]";
 
 	// 2. page constructor:
 	public LoginPage(Page page) {
@@ -32,8 +32,8 @@ public class LoginPage {
 		page.fill(emailId, appUserName);
 		page.fill(password, appPassword);
 		page.click(loginBtn);
-		page.locator(logoutLink).waitFor();
-		if(page.locator(logoutLink).isVisible()) {
+		page.locator(greetMsg).waitFor();
+		if(page.locator(greetMsg).isVisible()) {
 			System.out.println("user is logged in successfully....");
 			return true;
 		}else {

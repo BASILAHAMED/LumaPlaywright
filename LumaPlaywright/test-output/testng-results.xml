@@ -1,190 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-02T12:51:35 IST" name="Luma Test Regression PW Suite" finished-at="2024-02-02T12:52:23 IST" duration-ms="47978">
+  <suite started-at="2024-02-05T14:25:27 IST" name="Luma Test Regression PW Suite" finished-at="2024-02-05T14:26:20 IST" duration-ms="53295">
     <groups>
     </groups>
-    <test started-at="2024-02-02T12:51:35 IST" name="Luma Login Page Test_chrome" finished-at="2024-02-02T12:52:23 IST" duration-ms="47978">
+    <test started-at="2024-02-05T14:25:27 IST" name="Luma Login Page Test_chrome" finished-at="2024-02-05T14:26:05 IST" duration-ms="38426">
       <class name="com.qa.luma.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.luma.tests.LoginPageTest@387a8303]" started-at="2024-02-02T12:51:35 IST" name="setup" finished-at="2024-02-02T12:51:47 IST" duration-ms="12019" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.luma.tests.LoginPageTest@28cda624]" started-at="2024-02-05T14:25:27 IST" name="setup" finished-at="2024-02-05T14:25:40 IST" duration-ms="13715" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[edge]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginPageNavigationTest()[pri:1, instance:com.qa.luma.tests.LoginPageTest@387a8303]" started-at="2024-02-02T12:51:47 IST" name="loginPageNavigationTest" finished-at="2024-02-02T12:52:18 IST" duration-ms="30910" status="FAIL">
-          <exception class="com.microsoft.playwright.TimeoutError">
-            <message>
-              <![CDATA[Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\sbasi\AppData\Local\Temp\playwright-java-18134422618609666795\package\lib\server\progress.js:87:26)
-    at Frame.click (C:\Users\sbasi\AppData\Local\Temp\playwright-java-18134422618609666795\package\lib\server\frames.js:995:23)
-    at FrameDispatcher.click (C:\Users\sbasi\AppData\Local\Temp\playwright-java-18134422618609666795\package\lib\server\dispatchers\frameDispatcher.js:152:30)
-    at FrameDispatcher._handleCommand (C:\Users\sbasi\AppData\Local\Temp\playwright-java-18134422618609666795\package\lib\server\dispatchers\dispatcher.js:84:40)
-    at DispatcherConnection.dispatch (C:\Users\sbasi\AppData\Local\Temp\playwright-java-18134422618609666795\package\lib\server\dispatchers\dispatcher.js:351:39)
-}
-Call log:
-- waiting for locator("a[title='My Account']")
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\sbasi\AppData\Local\Temp\playwright-java-18134422618609666795\package\lib\server\progress.js:87:26)
-    at Frame.click (C:\Users\sbasi\AppData\Local\Temp\playwright-java-18134422618609666795\package\lib\server\frames.js:995:23)
-    at FrameDispatcher.click (C:\Users\sbasi\AppData\Local\Temp\playwright-java-18134422618609666795\package\lib\server\dispatchers\frameDispatcher.js:152:30)
-    at FrameDispatcher._handleCommand (C:\Users\sbasi\AppData\Local\Temp\playwright-java-18134422618609666795\package\lib\server\dispatchers\dispatcher.js:84:40)
-    at DispatcherConnection.dispatch (C:\Users\sbasi\AppData\Local\Temp\playwright-java-18134422618609666795\package\lib\server\dispatchers\dispatcher.js:351:39)
-}
-Call log:
-- waiting for locator("a[title='My Account']")
-
-at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120)
-at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:129)
-at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106)
-at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
-at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:586)
-at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89)
-at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:585)
-at com.microsoft.playwright.Page.click(Page.java:3752)
-at com.qa.luma.pages.HomePage.navigateToLoginPage(HomePage.java:44)
-at com.qa.luma.tests.LoginPageTest.loginPageNavigationTest(LoginPageTest.java:13)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-    at ProgressController.run (C:\Users\sbasi\AppData\Local\Temp\playwright-java-18134422618609666795\package\lib\server\progress.js:87:26)
-    at Frame.click (C:\Users\sbasi\AppData\Local\Temp\playwright-java-18134422618609666795\package\lib\server\frames.js:995:23)
-    at FrameDispatcher.click (C:\Users\sbasi\AppData\Local\Temp\playwright-java-18134422618609666795\package\lib\server\dispatchers\frameDispatcher.js:152:30)
-    at FrameDispatcher._handleCommand (C:\Users\sbasi\AppData\Local\Temp\playwright-java-18134422618609666795\package\lib\server\dispatchers\dispatcher.js:84:40)
-    at DispatcherConnection.dispatch (C:\Users\sbasi\AppData\Local\Temp\playwright-java-18134422618609666795\package\lib\server\dispatchers\dispatcher.js:351:39)
-}
-Call log:
-- waiting for locator("a[title='My Account']")
-
-at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:252)
-at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:209)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118)
-... 34 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+        <test-method signature="loginPageNavigationTest()[pri:1, instance:com.qa.luma.tests.LoginPageTest@28cda624]" started-at="2024-02-05T14:25:40 IST" name="loginPageNavigationTest" finished-at="2024-02-05T14:26:00 IST" duration-ms="19654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageNavigationTest -->
-        <test-method signature="forgotPwdLinkExistTest()[pri:2, instance:com.qa.luma.tests.LoginPageTest@387a8303]" started-at="2024-02-02T12:52:19 IST" name="forgotPwdLinkExistTest" finished-at="2024-02-02T12:52:19 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.qa.luma.pages.LoginPage.isForgotPwdLinkExist()" because "this.loginPage" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.luma.pages.LoginPage.isForgotPwdLinkExist()" because "this.loginPage" is null
-at com.qa.luma.tests.LoginPageTest.forgotPwdLinkExistTest(LoginPageTest.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="forgotPwdLinkExistTest()[pri:2, instance:com.qa.luma.tests.LoginPageTest@28cda624]" started-at="2024-02-05T14:26:00 IST" name="forgotPwdLinkExistTest" finished-at="2024-02-05T14:26:00 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotPwdLinkExistTest -->
-        <test-method signature="appLoginTest()[pri:3, instance:com.qa.luma.tests.LoginPageTest@387a8303]" started-at="2024-02-02T12:52:21 IST" name="appLoginTest" finished-at="2024-02-02T12:52:21 IST" duration-ms="9" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.qa.luma.pages.LoginPage.doLogin(String, String)" because "this.loginPage" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.qa.luma.pages.LoginPage.doLogin(String, String)" because "this.loginPage" is null
-at com.qa.luma.tests.LoginPageTest.appLoginTest(LoginPageTest.java:26)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="appLoginTest()[pri:3, instance:com.qa.luma.tests.LoginPageTest@28cda624]" started-at="2024-02-05T14:26:00 IST" name="appLoginTest" finished-at="2024-02-05T14:26:03 IST" duration-ms="2886" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.luma.tests.LoginPageTest@387a8303]" started-at="2024-02-02T12:52:22 IST" name="tearDown" finished-at="2024-02-02T12:52:23 IST" duration-ms="385" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.luma.tests.LoginPageTest@28cda624]" started-at="2024-02-05T14:26:04 IST" name="tearDown" finished-at="2024-02-05T14:26:05 IST" duration-ms="1464" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.luma.tests.LoginPageTest -->
     </test> <!-- Luma Login Page Test_chrome -->
+    <test started-at="2024-02-05T14:25:27 IST" name="Luma Home Page Test_chrome" finished-at="2024-02-05T14:26:20 IST" duration-ms="53295">
+      <class name="com.qa.luma.tests.HomePageTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.luma.tests.HomePageTest@2de56eb2]" started-at="2024-02-05T14:25:27 IST" name="setup" finished-at="2024-02-05T14:25:35 IST" duration-ms="8249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="homePageTitleTest()[pri:0, instance:com.qa.luma.tests.HomePageTest@2de56eb2]" started-at="2024-02-05T14:25:35 IST" name="homePageTitleTest" finished-at="2024-02-05T14:25:35 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTitleTest -->
+        <test-method signature="homePageURLTest()[pri:0, instance:com.qa.luma.tests.HomePageTest@2de56eb2]" started-at="2024-02-05T14:25:36 IST" name="homePageURLTest" finished-at="2024-02-05T14:25:36 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageURLTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.qa.luma.tests.HomePageTest@2de56eb2]" started-at="2024-02-05T14:25:37 IST" name="searchTest" data-provider="getProductData" finished-at="2024-02-05T14:25:50 IST" duration-ms="12269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Marco Lightweight Active Hoodie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.qa.luma.tests.HomePageTest@2de56eb2]" started-at="2024-02-05T14:25:52 IST" name="searchTest" data-provider="getProductData" finished-at="2024-02-05T14:26:03 IST" duration-ms="11115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fusion Backpack]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:com.qa.luma.tests.HomePageTest@2de56eb2]" started-at="2024-02-05T14:26:06 IST" name="searchTest" data-provider="getProductData" finished-at="2024-02-05T14:26:18 IST" duration-ms="11917" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dash Digital Watch]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.luma.tests.HomePageTest@2de56eb2]" started-at="2024-02-05T14:26:19 IST" name="tearDown" finished-at="2024-02-05T14:26:20 IST" duration-ms="513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.luma.tests.HomePageTest -->
+    </test> <!-- Luma Home Page Test_chrome -->
   </suite> <!-- Luma Test Regression PW Suite -->
 </testng-results>

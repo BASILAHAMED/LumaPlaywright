@@ -4,8 +4,8 @@
   <listeners>
     <listener class-name="com.qa.luma.listeners.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Luma Login Page Test_chrome(failed)" verbose="4">
-    <parameter name="browser" value="edge"/>
+  <test thread-count="5" parallel="tests" name="Luma Home Page Test_chrome(failed)" verbose="4">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.qa.luma.tests.LoginPageTest">
         <methods>
@@ -17,5 +17,5 @@
         </methods>
       </class> <!-- com.qa.luma.tests.LoginPageTest -->
     </classes>
-  </test> <!-- Luma Login Page Test_chrome(failed) -->
+  </test> <!-- Luma Home Page Test_chrome(failed) -->
 </suite> <!-- Failed suite [Luma Test Regression PW Suite] -->

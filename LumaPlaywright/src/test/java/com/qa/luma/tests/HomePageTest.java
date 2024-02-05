@@ -24,9 +24,9 @@ public class HomePageTest extends BaseTest {
 	@DataProvider
 	public Object[][] getProductData() {
 		return new Object[][] {
-				{ "Macbook" }, 
-				{ "iMac" }, 
-				{ "Samsung" }
+				{ "Marco Lightweight Active Hoodie" }, 
+				{ "Fusion Backpack" }, 
+				{ "Dash Digital Watch" }
 		};
 	}
 
@@ -34,7 +34,8 @@ public class HomePageTest extends BaseTest {
 	public void searchTest(String productName) throws InterruptedException {
 		Thread.sleep(5000);
 		String actualSearchHeader = homePage.doSearch(productName);
-		Assert.assertEquals(actualSearchHeader, "Search - " + productName);
+		String itemsPresent = "Items";
+		Assert.assertTrue(actualSearchHeader.contains(itemsPresent));
 	}
 
 }

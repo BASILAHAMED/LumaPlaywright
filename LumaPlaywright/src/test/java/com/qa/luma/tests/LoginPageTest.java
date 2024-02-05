@@ -9,7 +9,7 @@ import com.qa.luma.constants.AppConstants;
 public class LoginPageTest extends BaseTest {
 
 	@Test(priority = 1)
-	public void loginPageNavigationTest() {
+	public void loginPageNavigationTest() throws InterruptedException {
 		loginPage = homePage.navigateToLoginPage();
 		String actLoginPageTitle = loginPage.getLoginPageTitle();
 		System.out.println("page act title: " + actLoginPageTitle);

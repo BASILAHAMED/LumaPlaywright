@@ -7,11 +7,11 @@ public class HomePage {
 	private Page page;
 
 	// 1. String Locators 
-	private String search = "input[name='search']";
-	private String searchIcon = "div#search button";
-	private String searchPageHeader = "div#content h1";
-	private String loginLink = "a:text('Login')";
-	private String myAccountLink = "a[title='My Account']";
+	private String search = "input[id='search']";
+	private String searchIcon = "button[type='submit']";
+	private String searchPageHeader = "//*[@id=\"toolbar-amount\"]";
+//	private String loginLink = "a:text('Login')";
+	private String myAccountLink = "//li[contains(@class, 'authorization-link')]//a[contains(@href, 'customer/account/login')]";
 	
 
 	// 2. page constructor:
@@ -32,17 +32,19 @@ public class HomePage {
 		return url;
 	}
 
-	public String doSearch(String productName) {
+	public String doSearch(String productName) throws InterruptedException {
 		page.fill(search, productName);
 		page.click(searchIcon);
+		Thread.sleep(4000);
 		String header =  page.textContent(searchPageHeader);
 		System.out.println("search header: " + header);
+		page.goBack();
 		return header;
 	}
 	
-	public LoginPage navigateToLoginPage() {
+	public LoginPage navigateToLoginPage() throws InterruptedException {
 		page.click(myAccountLink);
-		page.click(loginLink);
+		Thread.sleep(4000);
 		return new LoginPage(page);
 	}
 

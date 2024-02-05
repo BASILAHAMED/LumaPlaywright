@@ -13,31 +13,12 @@
 	<test name="Luma Home Page Test_chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.qa.luma.tests.HomePageTest" ></class>
-		</classes>
+			<class name="com.qa.luma.tests.HomePageTest"></class></classes>
 	</test>
-
 	<test name="Luma Login Page Test_chrome">
-		<parameter name="browser" value="edge" ></parameter>
+		<parameter name="browser" value="firefox"></parameter>
 		<classes>
-			<class name="com.qa.luma.tests.LoginPageTest" />
-		</classes>
-	</test>
-
-
-	<!-- <test name="Luma Home Page Test_chrome">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.qa.luma.tests.HomePageTest" />
-		</classes>
-	</test> -->
-
-	<!-- <test name="Luma Login Page Test_chrome">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.qa.luma.tests.LoginPageTest" />
-		</classes>
-	</test> -->
+			<class name="com.qa.luma.tests.LoginPageTest"></class></classes></test>
 
 
 
